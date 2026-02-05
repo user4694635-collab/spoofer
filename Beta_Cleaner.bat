@@ -124,7 +124,7 @@ GOTO :EOF
 :Embed
     ECHO. ^+---------------------------------------------------------------------------^+
     ECHO. ^|            Deep Cleaner. All Rights Reserved @agre.ud agreement.          ^|
-    ECHO. ^|        Last Traces Update At 12/13/2025 Current Data Is %DATE%.       ^|
+    ECHO. ^|        Last Traces Update At 05/02/2026 Current Data Is %DATE%.       ^|
     ECHO. ^+---------------------------------------------------------------------------^+
     ECHO.
 GOTO:EOF
